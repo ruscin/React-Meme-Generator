@@ -7,10 +7,11 @@ class MemeGenerator extends Component {
      this.state = {
        topText: "",
        botText: "",
-       randomImage: "https://i.imgflip.com/47r22c.jpg",
+       randomImage: "https://i.imgflip.com/2hgfw.jpg",
        allMemeImgs: []
      };
      this.handleChange = this.handleChange.bind(this);
+     this.hadnleSumbit = this.hadnleSumbit.bind(this);
    }
 
   // componentWillMount(){}
@@ -22,30 +23,33 @@ class MemeGenerator extends Component {
     })
   });
    }
-  // componentWillUnmount(){}
-
-  // componentWillReceiveProps(){}
-  // shouldComponentUpdate(){}
-  // componentWillUpdate(){}
-  // componentDidUpdate(){}
-
+   
    handleChange(event){
      const {name, value} = event.target;
-     this.setState(
-       {
-         [name]: value
-       }
-     )
+     this.setState({ [name]: value })
    }
+    hadnleSumbit(event){
+     event.preventDefault()
+     const randNum = Math.floor(Math.random() *this.state.allMemeImgs.length)
+     const newMeme = this.state.allMemeImgs[randNum].url
+     this.setState({
+       randomImage: newMeme
+     })
+   } 
 
   render() {
     return (
       <div>
-        <form className="meme-form">
+        <form className="meme-form" onSubmit={this.hadnleSumbit}>
           <input type="text" name="topText" value={this.state.topText} onChange={this.handleChange} placeholder="top text" />
           <input type="text" name="botText" value={this.state.botText} onChange={this.handleChange} placeholder="bottom text" />
-          <button>Generate</button>
+          <button >Generate</button>
         </form>
+        <div className="meme-field">
+          <img src={this.state.randomImage} alt="" />
+          <h2 className="top">{this.state.topText}</h2>
+          <h2 className="bottom">{this.state.botText}</h2>
+        </div>
       </div>
     );
   }

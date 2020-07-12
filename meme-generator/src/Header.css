@@ -5,6 +5,7 @@
 .header {
     background-image: linear-gradient(to right, purple , darkblue);
     position: relative;
+    
 }
 .header img{
     --size: 80px;

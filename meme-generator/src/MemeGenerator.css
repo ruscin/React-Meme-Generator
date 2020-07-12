@@ -5,3 +5,33 @@
 .MemeGenerator {
     /* propertys here */
 }
+.meme-field{
+    position: absolute;
+}
+.meme-field .top, .meme-field .bottom{
+    position: absolute;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.meme-field .top{
+    top: 0%;
+}
+.meme-field .bottom{
+    bottom: 0%;
+}
+button{
+    background-color: purple;
+    color: white;
+}
+form input{
+    margin-left: 10px;
+    margin-right: 10px;
+}
