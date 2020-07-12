@@ -18,7 +18,12 @@ class Header extends Component {
 
   render() {
     return (
-      <div>tu będzie header</div>
+     <header className="header">
+       <img src="http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png" alt="huh?"/>
+       <p>
+         Meme Generator
+       </p>
+     </header>
     );
   }
 }

@@ -2,6 +2,33 @@
  * Header css File
 */
 
-.Header {
-    /* propertys here */
+.header {
+    background-image: linear-gradient(to right, purple , darkblue);
+    position: relative;
 }
+.header img{
+    --size: 80px;
+    width: var(--size);
+    height: var(--size);
+    margin-left: 20px;
+}
+header p{
+    display: inline;
+    font-size: 54px;
+    color:white;
+    margin: 0;
+    position: absolute;           
+    top: 50%;                  
+    transform: translate(20px, -50%)
+}
+
+@media only screen and (max-width: 600px) {
+    header p{
+        font-size: 30px;
+    }
+    header img{
+        --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    }
+  }
