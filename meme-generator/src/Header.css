@@ -5,11 +5,8 @@
 .header {
     background-image: linear-gradient(to right, purple , darkblue);
     position: relative;
-<<<<<<< Updated upstream
-=======
     height: 100px;
     
->>>>>>> Stashed changes
 }
 .header img{
     --size: 80px;
