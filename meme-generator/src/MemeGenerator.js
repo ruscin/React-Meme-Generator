@@ -49,8 +49,8 @@ class MemeGenerator extends Component {
     })
   }
 
- // getH = () => this.state.allMemeImgs.filter(_url => _url === this.state.randomImage)[0].height;
- // getW = () => this.state.allMemeImgs.filter(_url => _url === this.state.randomImage)[0].width; zostawiam na pamiątkę to prawdziwe dzieło
+//getH = () => this.state.allMemeImgs.filter(_url => _url === this.state.randomImage)[0].height;
+// getW = () => this.state.allMemeImgs.filter(_url => _url === this.state.randomImage)[0].width; zostawiam na pamiątkę to prawdziwe dzieło
 
 
 

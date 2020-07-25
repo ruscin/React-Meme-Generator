@@ -1,6 +1,6 @@
 {
   "name": "meme-generator",
-  "homepage": "https://ruscinski.pl/react/",
+  "homepage": "https://ruscinski.pl/react/meme",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
